@@ -1,7 +1,7 @@
 nav{
 	background: @navbg;
 	transition: all 0.2s;
-	font-weight: bold;
+	
 	min-height: 300px;
 }
 
@@ -13,7 +13,7 @@ ul{
 		
 	li{
 		width: 100%;
-		padding: 10px 13px;
+		padding: 10px 0 0;
 		list-style-type: none;
 		border-bottom: 1px solid #333;
 
@@ -21,8 +21,22 @@ ul{
 			color: #bbb;
 			display: block;
 			text-decoration: none;
+			padding: 0 10px;
+			font-weight: bold;
 		}
-
+	
+		> div{
+			height: 0;
+			overflow: hidden;
+			opacity: 0;
+			padding: 5px 15px;
+			transition: all 0.4s;
+			border-left: 3px solid #5a7bbb;
+		}
+		h3{
+			margin: 3px 0;
+			font-size: 14px;
+		}
 		&:hover{
 			background: @navhover;
 			a{
@@ -34,6 +48,12 @@ ul{
 			background: @navActive;
 			a{
 				color: #333;
+			}
+
+			> div{
+				height: 80px;
+				opacity: 1;
+				transition: all 0.4s;
 			}
 		}
 	}
