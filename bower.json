@@ -1,0 +1,19 @@
+{
+  "name": "Ambercite",
+  "version": "0.0.1",
+  "authors": [
+    "Srikanth Kondaparthy <srk289@gmail.com>"
+  ],
+  "description": "Ambercite",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery":"^2.1.*",
+    "normalize.css": "*",
+    "jquery-ui": "*"
+  }
+}
