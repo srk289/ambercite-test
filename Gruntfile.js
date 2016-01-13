@@ -3,7 +3,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     connect: {
-      uses_defaults: {}
+          server:{
+            options: {
+              livereload: true,
+              open: {
+
+              }
+            }
+          }
     },
     less: {
       options: {
